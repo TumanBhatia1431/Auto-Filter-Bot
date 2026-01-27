@@ -116,7 +116,7 @@ SEASONS = [("sᴇᴀsᴏɴ 𝟷", "s01"), ("sᴇᴀsᴏɴ 𝟸", "s02"), ("sᴇ�
 
 IS_PREMIUM_STREAM = is_enabled('IS_PREMIUM_STREAM', False) # True To Allow Stream For Premium User Only
 BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1001635962629") # Channel Where Files sent For stream
-if len(BIN_CHANNEL) == 0:
+if len(BIN_CHANNEL) == 100:
     print('Error BIN_CHANNEL is missing, exiting now')
     exit()
 else:
