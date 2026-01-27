@@ -40,7 +40,7 @@ FILES_LIMIT = int(environ.get("FREE_FILES", "3")) #No. of File User Gets In Free
 # Database Settings
 
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://tumaneditor90k_db_user:WzKNiYXXUrkJ00hA@cluster0.lqvj3kn.mongodb.net/?appName=Cluster0")
-FILES_DATABASE_URL = environ.get('FILES_DATABASE_URL', "mongodb+srv://@cluster0.mongodb.net/?retryWrites=true&w=majority") # For Files
+FILES_DATABASE_URL = environ.get('FILES_DATABASE_URL', "mongodb+srv://tumaneditor90k_db_user:WzKNiYXXUrkJ00hA@cluster0.lqvj3kn.mongodb.net/?appName=Cluster0") # For Files
 SECOND_FILES_DATABASE_URL = environ.get('SECOND_FILES_DATABASE_URL', "") # 2nd DB For Files
 DATABASE_NAME = environ.get('DATABASE_NAME', "Silicon")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Silicon_Files')
@@ -48,8 +48,8 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Silicon_Files')
 # Verify/Shortlink Settings 
 
 IS_VERIFY = is_enabled('IS_VERIFY', True)
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', ''))
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', ''))
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1003582824095'))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1003582824095'))
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/tuman_movies")
 TUTORIAL2 = environ.get("TUTORIAL2", "https://t.me/tuman_movies")
 TUTORIAL3 = environ.get("TUTORIAL3", "https://t.me/tuman_movies")
@@ -115,7 +115,7 @@ SEASONS = [("sᴇᴀsᴏɴ 𝟷", "s01"), ("sᴇᴀsᴏɴ 𝟸", "s02"), ("sᴇ�
 # Stream Settings 
 
 IS_PREMIUM_STREAM = is_enabled('IS_PREMIUM_STREAM', False) # True To Allow Stream For Premium User Only
-BIN_CHANNEL = environ.get("BIN_CHANNEL", "") # Channel Where Files sent For stream
+BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1001635962629") # Channel Where Files sent For stream
 if len(BIN_CHANNEL) == 0:
     print('Error BIN_CHANNEL is missing, exiting now')
     exit()
