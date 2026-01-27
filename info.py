@@ -41,7 +41,7 @@ FILES_LIMIT = int(environ.get("FREE_FILES", "3")) #No. of File User Gets In Free
 
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://tumaneditor90k_db_user:WzKNiYXXUrkJ00hA@cluster0.lqvj3kn.mongodb.net/?appName=Cluster0")
 FILES_DATABASE_URL = environ.get('FILES_DATABASE_URL', "mongodb+srv://tumaneditor90k_db_user:WzKNiYXXUrkJ00hA@cluster0.lqvj3kn.mongodb.net/?appName=Cluster0") # For Files
-SECOND_FILES_DATABASE_URL = environ.get('SECOND_FILES_DATABASE_URL', "") # 2nd DB For Files
+SECOND_FILES_DATABASE_URL = environ.get('SECOND_FILES_DATABASE_URL', "mongodb+srv://tumaneditor90k_db_user:WzKNiYXXUrkJ00hA@cluster0.lqvj3kn.mongodb.net/?appName=Cluster0") # 2nd DB For Files
 DATABASE_NAME = environ.get('DATABASE_NAME', "Silicon")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Silicon_Files')
 
@@ -79,7 +79,7 @@ REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(
 # Movie Update Notification Settings/ Auto Index Settings
 
 MOVIE_UPDATE_NOTIFICATION = bool(environ.get('MOVIE_UPDATE_NOTIFICATION', False))  # Notification On (True) / Off (False)
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', ''))  # Notification of sent to your channel
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '1002668668792'))  # Notification of sent to your channel
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()] # Auto Index Channel
 DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','')) # Channel to delete file from DB
 IMAGE_FETCH = bool(environ.get('IMAGE_FETCH', True))  # On (True) / Off (False)
