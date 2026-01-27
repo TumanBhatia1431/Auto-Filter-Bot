@@ -24,7 +24,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '6285137746:AAGXNNgutTUNbQHkAzQMPEL2NSxmw-r
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '944416662').split()]
 USERNAME = environ.get('USERNAME', "https://t.me/tuman_movies")
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1003584109001'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/tuman_movies')
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/j6oG2dymtoYwMmU1')
 
 # Pics 
 
@@ -40,10 +40,10 @@ FILES_LIMIT = int(environ.get("FREE_FILES", "3")) #No. of File User Gets In Free
 # Database Settings
 
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://tumaneditor90k_db_user:WzKNiYXXUrkJ00hA@cluster0.lqvj3kn.mongodb.net/?appName=Cluster0")
-FILES_DATABASE_URL = environ.get('FILES_DATABASE_URL', "mongodb+srv://tumaneditor90k_db_user:WzKNiYXXUrkJ00hA@cluster0.lqvj3kn.mongodb.net/?appName=Cluster0") # For Files
-SECOND_FILES_DATABASE_URL = environ.get('SECOND_FILES_DATABASE_URL', "mongodb+srv://tumaneditor90k_db_user:WzKNiYXXUrkJ00hA@cluster0.lqvj3kn.mongodb.net/?appName=Cluster0") # 2nd DB For Files
-DATABASE_NAME = environ.get('DATABASE_NAME', "Silicon")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Silicon_Files')
+FILES_DATABASE_URL = environ.get('FILES_DATABASE_URL', "https://t.me/+hrGwKUSz5RIzNTZl") # For Files
+SECOND_FILES_DATABASE_URL = environ.get('SECOND_FILES_DATABASE_URL', "https://t.me/+hrGwKUSz5RIzNTZl") # 2nd DB For Files
+DATABASE_NAME = environ.get('DATABASE_NAME', "Tuman_Moviess")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Tuman_Moviess')
 
 # Verify/Shortlink Settings 
 
@@ -65,8 +65,8 @@ THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "14400"))
 
 # Force Subscribe Settings 
 
-auth_req_channels = environ.get("AUTH_REQ_CHANNELS", "-100")# requst to join Channel for force sub (make sure bot is admin) only for bot ADMINS  
-auth_channels = environ.get("AUTH_CHANNELS", "-100")# Channels for force sub (make sure bot is admin)
+auth_req_channels = environ.get("AUTH_REQ_CHANNELS", "-1002668668792")# requst to join Channel for force sub (make sure bot is admin) only for bot ADMINS  
+auth_channels = environ.get("AUTH_CHANNELS", "-1002668668792")# Channels for force sub (make sure bot is admin)
 AUTH_REQ_CHANNELS = [int(ch) for ch in auth_req_channels.split() if ch and id_pattern.match(ch)] 
 AUTH_CHANNELS = [int(ch) for ch in auth_channels.split() if ch and id_pattern.match(ch)]
 
@@ -78,7 +78,7 @@ REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(
 
 # Movie Update Notification Settings/ Auto Index Settings
 
-MOVIE_UPDATE_NOTIFICATION = bool(environ.get('MOVIE_UPDATE_NOTIFICATION', False))  # Notification On (True) / Off (False)
+MOVIE_UPDATE_NOTIFICATION = bool(environ.get('MOVIE_UPDATE_NOTIFICATION', True))  # Notification On (True) / Off (False)
 MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '1002668668792'))  # Notification of sent to your channel
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()] # Auto Index Channel
 DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','1002668668792')) # Channel to delete file from DB
