@@ -20,7 +20,7 @@ def is_valid_ip(ip):
 
 API_ID = int(environ.get('API_ID', '27473163'))
 API_HASH = environ.get('API_HASH', 'f199e74434dfa81f6ec26c8b7ed4655a')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6285137746:AAGXNNgutTUNbQHkAzQMPEL2NSxmw-rk8Sc')
+BOT_TOKEN = environ.get('BOT_TOKEN', '8441028435:AAEpNgSJHWCpfjCmeT3Cw2qgk4lBsX9FiBY')
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '944416662').split()]
 USERNAME = environ.get('USERNAME', "https://t.me/tuman_movies")
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1003584109001'))
