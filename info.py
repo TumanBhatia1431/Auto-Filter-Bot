@@ -35,14 +35,14 @@ FSUB_PICS = (environ.get('FSUB_PICS', 'https://graph.org/file/7478ff3eac37f4329c
 # File Limit
 
 IS_FILE_LIMIT = is_enabled('IS_FILE_LIMIT', True) # Enable Or Disable File Limit
-FILES_LIMIT = int(environ.get("FREE_FILES", "5")) #No. of File User Gets In Free
+FILES_LIMIT = int(environ.get("FREE_FILES", "3")) #No. of File User Gets In Free
 
 # Database Settings
 
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://tumaneditor90k_db_user:WzKNiYXXUrkJ00hA@cluster0.lqvj3kn.mongodb.net/?appName=Cluster0")
 FILES_DATABASE_URL = environ.get('FILES_DATABASE_URL', "mongodb+srv://tumaneditor90k_db_user:WzKNiYXXUrkJ00hA@cluster0.lqvj3kn.mongodb.net/?appName=Cluster0") # For Files
-SECOND_FILES_DATABASE_URL = environ.get('SECOND_FILES_DATABASE_URL', "mongodb+srv://tumaneditor90k_db_user:WzKNiYXXUrkJ00hA@cluster0.lqvj3kn.mongodb.net/?appName=Cluster0") # 2nd DB For Files
-DATABASE_NAME = environ.get('DATABASE_NAME', "Tuman_Moviess")
+SECOND_FILES_DATABASE_URL = environ.get('SECOND_FILES_DATABASE_URL', "https://t.me/+hrGwKUSz5RIzNTZl") # 2nd DB For Files
+DATABASE_NAME = environ.get('DATABASE_NAME', "autofilter")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Tuman_Moviess')
 
 # Verify/Shortlink Settings 
